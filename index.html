@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>愛延續&毛孩 - 給毛孩一個家</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-primary: #6A4040;
+            --brand-secondary: #B78F8A;
+            --brand-bg: #F5F1F0;
+            --brand-text: #2E1C1C;
+        }
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: var(--brand-bg);
+            color: var(--brand-text);
+        }
+        .btn-primary {
+            background-color: var(--brand-primary);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: var(--brand-secondary);
+            transform: translateY(-2px);
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(106, 64, 64, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-[#6A4040]">愛延續&毛孩</div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-[#B78F8A]">關於我們</a>
+                <a href="#dogs" class="hover:text-[#B78F8A]">待領養毛孩</a>
+                <a href="#process" class="hover:text-[#B78F8A]">領養流程</a>
+            </nav>
+            <a href="https://line.me/ti/p/5SNNtBZBKU" class="btn-primary px-6 py-2 rounded-full font-medium">聯繫我們</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">愛，是<br><span class="text-[#B78F8A]">為牠延續</span>溫暖的家</h1>
+                <p class="text-lg mb-8 text-gray-600">我們是一群熱愛毛孩的志工，致力於為流浪的小生命尋找那個可以陪伴一生的家人。每一個等待，都是為了遇見更好的你。</p>
+                <div class="flex space-x-4">
+                    <a href="https://line.me/ti/p/5SNNtBZBKU" class="btn-primary px-8 py-4 rounded-xl text-lg font-bold shadow-lg shadow-[#6A4040]/20 text-center">立即申請領養</a>
+                    <a href="#dogs" class="bg-white border-2 border-[#6A4040] text-[#6A4040] px-8 py-4 rounded-xl text-lg font-bold hover:bg-[#F5F1F0] transition-colors text-center">查看待領養狗狗</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 md:pl-10">
+                <div class="relative">
+                    <img src="https://api.kuse.ai/api/folder/v1/file/4e27f5955b397227676a27428b2e25fcd391adc7f085935a2973d3889190f92a_3474087.jpg" alt="領養狗狗" class="rounded-3xl shadow-2xl">
+                    <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl hidden lg:block">
+                        <p class="text-[#6A4040] font-bold">目前園區已有</p>
+                        <p class="text-3xl font-black">50+ 毛孩</p>
+                        <p class="text-gray-500 text-sm">成功找到幸福歸宿</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold mb-4">關於「愛延續&毛孩」</h2>
+                <div class="w-20 h-1 bg-[#B78F8A] mx-auto mb-8"></div>
+                <p class="text-gray-600 text-lg">我們相信每一隻狗狗都值得擁有被愛的權利。園區內所有待領養的毛孩，都經過專業志工的細心照料與健康檢查。我們嚴謹的審核過程，是為了確保每一段緣分都能長久且穩定。</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <img src="https://api.kuse.ai/api/folder/v1/file/c52df3386b8457270ed180af3cfe71a6187608bbaa859205b08d72d750640772_3474084.jpg" alt="領養生活" class="rounded-3xl">
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-[#F5F1F0] p-3 rounded-xl text-[#6A4040]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl mb-2">健康保障</h3>
+                            <p class="text-gray-600">所有狗狗均完成基本疫苗接種與體內外驅蟲。</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-[#F5F1F0] p-3 rounded-xl text-[#6A4040]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl mb-2">個性媒合</h3>
+                            <p class="text-gray-600">透過線上審核，為您推薦最適合家庭生活型態的夥伴。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dogs Grid -->
+    <section id="dogs" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">待領養的可愛毛孩</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Image Card -->
+                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100">
+                    <img src="https://api.kuse.ai/api/folder/v1/file/61056ef8e31beab330bc1818bd40165c90775819a4816f7bf0a9cbab50b1aadf_3474086.jpg" alt="更多狗狗" class="w-full h-80 object-cover group-hover:scale-105 transition-transform">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">目前待領養成員</h3>
+                        <p class="text-gray-600 mb-6">園區內還有許多可愛的孩子正在等待一個溫暖的承諾，歡迎諮詢牠們的狀況。</p>
+                        <a href="https://line.me/ti/p/5SNNtBZBKU" class="block text-center btn-primary py-3 rounded-xl font-bold">我想認識牠們</a>
+                    </div>
+                </div>
+                <!-- Placeholder Card 1 -->
+                <div class="bg-white/50 border-2 border-dashed border-[#B78F8A] rounded-3xl flex flex-col items-center justify-center p-10 text-center">
+                    <div class="text-[#B78F8A] mb-4 text-4xl">🐾</div>
+                    <h3 class="text-xl font-bold mb-2">波板糖 (10.5個月)</h3>
+                    <p class="text-gray-500 mb-4">活潑開朗的小男生，正在尋找一個可以陪他跑步的家。</p>
+                    <a href="https://line.me/ti/p/5SNNtBZBKU" class="text-[#6A4040] font-bold hover:underline">諮詢波板糖狀況 →</a>
+                </div>
+                <!-- Placeholder Card 2 -->
+                <div class="bg-white/50 border-2 border-dashed border-[#B78F8A] rounded-3xl flex flex-col items-center justify-center p-10 text-center">
+                    <div class="text-[#B78F8A] mb-4 text-4xl">🐶</div>
+                    <h3 class="text-xl font-bold mb-2">安好 (2個月)</h3>
+                    <p class="text-gray-500 mb-4">害羞內向的小男生，渴望一份安定且長久的陪伴。</p>
+                    <a href="https://line.me/ti/p/5SNNtBZBKU" class="text-[#6A4040] font-bold hover:underline">諮詢安好狀況 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adoption Process -->
+    <section id="process" class="py-20 bg-[#6A4040] text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 text-center">領養流程說明</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center relative">
+                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">1</div>
+                    <h3 class="font-bold mb-3">線上初步諮詢</h3>
+                    <p class="text-white/70 text-sm">點擊按鈕加入 Line，填寫初步審核資料。</p>
+                    <div class="hidden md:block absolute top-8 -right-4 text-white/30 text-2xl">→</div>
+                </div>
+                <div class="text-center relative">
+                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">2</div>
+                    <h3 class="font-bold mb-3">資料初步審核</h3>
+                    <p class="text-white/70 text-sm">志工將根據您的家庭環境，評估合適的毛孩。</p>
+                    <div class="hidden md:block absolute top-8 -right-4 text-white/30 text-2xl">→</div>
+                </div>
+                <div class="text-center relative">
+                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">3</div>
+                    <h3 class="font-bold mb-3">現場互動預約</h3>
+                    <p class="text-white/70 text-sm">審核通過後，將安排您來到園區與狗狗親自互動。</p>
+                    <div class="hidden md:block absolute top-8 -right-4 text-white/30 text-2xl">→</div>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#B78F8A] rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold shadow-lg shadow-black/20 text-white">4</div>
+                    <h3 class="font-bold mb-3">迎接家人回家</h3>
+                    <p class="text-white/70 text-sm">完成領養程序，開始與毛孩的幸福新生活。</p>
+                </div>
+            </div>
+            <div class="mt-16 text-center">
+                <a href="https://line.me/ti/p/5SNNtBZBKU" class="bg-white text-[#6A4040] px-10 py-5 rounded-2xl text-xl font-bold hover:bg-[#F5F1F0] transition-colors inline-block">我想開始申請</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-white border-t border-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-500 mb-4">愛延續&毛孩 © 2026. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 text-gray-400">
+                <a href="https://line.me/ti/p/5SNNtBZBKU" class="hover:text-[#6A4040]">Line 客服</a>
+                <a href="#" class="hover:text-[#6A4040]">Facebook 粉絲專頁</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
